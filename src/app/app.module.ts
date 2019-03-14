@@ -3,8 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AuthenticationModule } from './authentication/authentication.module';
-import { StaticPagesModule } from './static-pages/static-pages.module';
+
 
 @NgModule({
   declarations: [
@@ -12,9 +11,7 @@ import { StaticPagesModule } from './static-pages/static-pages.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    AuthenticationModule,
-    StaticPagesModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
