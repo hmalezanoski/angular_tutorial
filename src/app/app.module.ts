@@ -5,10 +5,16 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {AuthenticationModule} from './authentication/authentication.module';
 import {StaticPagesModule} from './static-pages/static-pages.module';
+import { LayoutStaicPageComponent } from './layouts/layout-staic-page/layout-staic-page.component';
+import { LayoutAutheticationComponent } from './layouts/layout-authetication/layout-authetication.component';
+import { LayoutDashboardComponent } from './layouts/layout-dashboard/layout-dashboard.component';
 
 @NgModule({
     declarations: [
         AppComponent,
+        LayoutStaicPageComponent,
+        LayoutAutheticationComponent,
+        LayoutDashboardComponent,
     ],
     imports: [
         BrowserModule,
