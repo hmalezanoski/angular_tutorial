@@ -11,7 +11,7 @@ import {ServicesComponent} from './static-pages/services/services.component';
 
 const routes: Routes = [
     {
-        path: '',
+        path: 'home',
         component: HomeComponent
     },
     {
@@ -36,7 +36,7 @@ const routes: Routes = [
     },
     {
         path: '',
-        redirectTo: '',
+        redirectTo: '/home',
         pathMatch: 'full'
     },
     { path: '**', component: PageNotFoundComponent }

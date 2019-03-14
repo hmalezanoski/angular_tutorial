@@ -6,10 +6,9 @@ import {AppComponent} from './app.component';
 import {AuthenticationModule} from './authentication/authentication.module';
 import {StaticPagesModule} from './static-pages/static-pages.module';
 
-
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
     ],
     imports: [
         BrowserModule,
