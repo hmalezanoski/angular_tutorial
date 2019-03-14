@@ -8,6 +8,7 @@ import {StaticPagesModule} from './static-pages/static-pages.module';
 import { LayoutStaicPageComponent } from './layouts/layout-staic-page/layout-staic-page.component';
 import { LayoutAutheticationComponent } from './layouts/layout-authetication/layout-authetication.component';
 import { LayoutDashboardComponent } from './layouts/layout-dashboard/layout-dashboard.component';
+import {NavStaticComponent} from './static-pages/nav-static/nav-static.component';
 
 @NgModule({
     declarations: [
@@ -20,7 +21,7 @@ import { LayoutDashboardComponent } from './layouts/layout-dashboard/layout-dash
         BrowserModule,
         AppRoutingModule,
         AuthenticationModule,
-        StaticPagesModule
+        StaticPagesModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

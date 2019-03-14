@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-layout-authetication',
-  templateUrl: './layout-authetication.component.html',
-  styleUrls: ['./layout-authetication.component.scss']
+    selector: 'app-layout-authetication',
+    templateUrl: './layout-authetication.component.html',
+    styleUrls: ['./layout-authetication.component.scss']
 })
 export class LayoutAutheticationComponent implements OnInit {
 
-  constructor() { }
+    constructor(private router: Router) {
+    }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
+
+    onLogoClick() {
+        this.router.navigate(['/']);
+    }
 
 }
