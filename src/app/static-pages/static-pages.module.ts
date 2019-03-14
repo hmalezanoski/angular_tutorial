@@ -5,10 +5,13 @@ import { StaticPagesRoutingModule } from './static-pages-routing.module';
 import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [HomeComponent],
+
   imports: [
     CommonModule,
     StaticPagesRoutingModule
-  ]
+  ],
+    declarations: [
+        HomeComponent
+    ]
 })
 export class StaticPagesModule { }
