@@ -9,6 +9,7 @@ import {AboutUsComponent} from './static-pages/about-us/about-us.component';
 import {ServicesComponent} from './static-pages/services/services.component';
 import {LayoutStaicPageComponent} from './layouts/layout-staic-page/layout-staic-page.component';
 import {LayoutAutheticationComponent} from './layouts/layout-authetication/layout-authetication.component';
+import {ResetCodeComponent} from './authentication/reset-code/reset-code.component';
 
 
 const routes: Routes = [
@@ -28,6 +29,7 @@ const routes: Routes = [
             {path: 'login', component: LoginComponent },
             {path: 'register', component: RegisterComponent },
             {path: 'reset-password', component: ResetPasswordComponent },
+            {path: 'reset-code', component: ResetCodeComponent },
         ]
     },
     {

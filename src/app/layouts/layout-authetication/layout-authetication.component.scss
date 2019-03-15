@@ -1,9 +1,26 @@
 .form-signin {
-  width: 100%;
+  color: white;
+  width: 80%;
   max-width: 330px;
   padding: 15px;
   margin: 0 auto;
-  background-color: lightgrey;
-  margin-top: 30px;
+  background-image:linear-gradient(to bottom right, skyblue, deepskyblue);
+  margin-top: 100px;
+}
+
+.loginLogo{
+  margin-bottom: 0!important;
+}
+
+@media (max-width: 768px) {
+
+  .form-signin{
+    color: deepskyblue;
+    width: 100%;
+    vertical-align: center;
+    horiz-align: center;
+    background: none;
+    margin-top: 50px;
+  }
 
 }
