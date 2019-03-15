@@ -13,10 +13,10 @@ export class LoginComponent implements OnInit {
   }
     onDonHaveAccountClik() {
 
-     this.router.navigate(['/reset-code']);
+     this.router.navigate(['/register']);
     }
 
-    onForgotPassowrdClick(){
-    this.router.navigate(['/reset-password']);
+    onForgotPassowrdClick() {
+    this.router.navigate(['/reset-code']);
     }
 }
