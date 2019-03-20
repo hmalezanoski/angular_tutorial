@@ -9,6 +9,9 @@ export class NavStaticComponent implements OnInit {
 
   constructor() { }
 
+  ifAuthenticated() {
+    return true
+  }
   ngOnInit() {
   }
 
