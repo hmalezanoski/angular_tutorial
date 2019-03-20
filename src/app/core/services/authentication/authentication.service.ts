@@ -23,7 +23,7 @@ export class AuthenticationService {
   }
 
   checkIfAuthenticated() {
-    const authenticated = localStorage.get('authenticated');
+    const authenticated = localStorage.getItem('authenticated');
     return (authenticated === '1');
   }
 

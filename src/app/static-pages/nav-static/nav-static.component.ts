@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AuthenticationService} from '../../core/services/authentication/authentication.service';
 
 @Component({
   selector: 'app-nav-static',
@@ -7,11 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavStaticComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private authenticationService: AuthenticationService
+  ) {}
 
   ifAuthenticated() {
-    return true
+    return this.authenticationService.checkIfAuthenticated();
   }
+
+  doLogout() {
+    this.authenticationService.logout();
+  }
+
   ngOnInit() {
   }
 
